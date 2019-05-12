@@ -10,15 +10,21 @@ header {
   display: flex;
   align-items: center;
   text-align: center;
-  background: #3441A5;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #090127, #3441A5);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #090127, #3441A5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: rgb(105, 52, 165);  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #090127, #4B0082);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #090127, #4B0082); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 header > img {
   height: 80%;
-  margin-left: 10%;
+  margin-left: 5%;
 }
+
+@media screen and (max-width: 400px) { 
+
+  header > img { display: none; }  
+  
+  }
 
 header > p {
   font-family: VT323, monospace;
@@ -34,6 +40,7 @@ header > p {
 
 .meme > img {
   width: 100%;
+  min-height: 300px
 }
 
 .meme > h2 {
